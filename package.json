@@ -1,0 +1,18 @@
+{
+  "name": "project-helper-tools",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "project tools",
+    "tools",
+    "utils"
+  ],
+  "author": "wannianqing",
+  "license": "ISC",
+  "homepage": "https://github.com/wannianqing/project-helper-tools",
+  "dependencies": {}
+}
