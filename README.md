@@ -57,6 +57,10 @@ npm install project-helper-tools --save
   projectHelperTools.objectToQuery(this.parameter)
   ```
 
+- `param2obj` 获取浏览器域参数，并将其转换成键值对
+
+  - 参数：无
+
 - `list2tree`数组结构转换成树形结构
 
   - 参数 data 为将要转换的数组
@@ -73,6 +77,43 @@ npm install project-helper-tools --save
   ]
   
   const arr1 = projectHelperTools.list2tree(this.arr,'id','pid');
+  ```
+
+- `debounce` 防抖函数
+
+  - 参数 func：回调函数
+  - wait：延迟执行毫秒数
+  - immediate：是否立即执行 默认true 立即执行
+
+  ```javascript
+  // vue中使用方式	
+  import {debounce} from 'project-helper-tools'
+  methods: {
+      handleClick:debounce(function(){
+        console.log(this.str)
+      },1000)
+  }
+  ```
+
+- `throttle`节流函数
+
+  - 参数 func：回调函数
+  - wait：延迟执行毫秒数
+
+  ```javascript
+  import {throttle} from 'project-helper-tools'
+  let isDown = false;
+  document.onmousedown = function(){
+      isDown = true
+  }
+  document.onmousemove = throttle(function(event){
+      if(isDown){
+          console.log(event)
+      }
+  },1000)
+  document.onmouseup = function(){
+      isDown = false
+  }
   ```
 
   

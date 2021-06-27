@@ -86,12 +86,18 @@ const deepClone = require('./libs/deepClone');
 const formatMoney = require('./libs/formatMoney');
 const phoneNumber = require('./libs/phoneNumber');
 const objectToQuery = require('./libs/objectToQuery');
-const list2tree = require('./libs/list2tree')
+const list2tree = require('./libs/list2tree');
+const param2obj = require('./libs/param2obj');
+const debounce = require('./libs/debounce');
+const throttle = require('./libs/throttle');
 
 module.exports = {
   deepClone,
   formatMoney,
   phoneNumber,
   objectToQuery,
-  list2tree
+  list2tree,
+  param2obj,
+  debounce,
+  throttle
 }

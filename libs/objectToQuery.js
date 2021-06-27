@@ -1,3 +1,8 @@
+/**
+ * 将键值对 转换成url参数形式
+ * @param {*} obj 
+ * @returns 
+ */
 const objectToQuery = function(obj){
     //如果传入的不是object类型，则中断
     if(Object.prototype.toString.call(obj) !== '[object Object]') return;
