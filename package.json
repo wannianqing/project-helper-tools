@@ -1,7 +1,7 @@
 {
   "name": "project-helper-tools",
   "version": "1.0.2",
-  "description": "",
+  "description": "持续收录开发过程中经常性使用到的工具类函数，提高开发效率，避免每次做项目每次都要写通用的工具类函数。",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
